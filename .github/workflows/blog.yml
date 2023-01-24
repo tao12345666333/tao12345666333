@@ -19,6 +19,6 @@ jobs:
           USERNAME: 'zhangjintao9020'
           BLOG_URL: 'https://blog.moelove.info'
           COUNT: 1 # MAX Visisble
-          STYLE: "blog-left"
+          STYLE: "blog-grid"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
