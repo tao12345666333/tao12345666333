@@ -8,7 +8,15 @@
 
 ## My Latest Blog Posts 👇
 <!-- HASHNODE_BLOG:START -->
-- [My Rust journey and how to learn Rust](https://blog.moelove.info/my-rust-journey-and-how-to-learn-rust)
+<p align="left">
+<a href="https://blog.moelove.info/my-rust-journey-and-how-to-learn-rust" title="My Rust journey and how to learn Rust"><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1673954421780/58ec55f9-907a-4ff4-b9c7-7b65713680cf.png" alt="My Rust journey and how to learn Rust" width="250px" align="left" /></a>
+<a href="https://blog.moelove.info/my-rust-journey-and-how-to-learn-rust" title="My Rust journey and how to learn Rust"><strong>My Rust journey and how to learn Rust</strong></a>
+<div><strong>17 Jan 2023</strong></div>
+<br/> I'll share my Rust journey, how I learned Rust and some free Rust learning resources.
+
+Rust has become more and more popular. Through the StackOverflow 2022 Developer Survey, we can see that many people are interested in Rust.
+
+Rust is on its seventh... </p> <br/> <br/>
 <!-- HASHNODE_BLOG:END -->
 
 <div>
