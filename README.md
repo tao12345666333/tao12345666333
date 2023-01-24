@@ -8,6 +8,7 @@
 
 ## My Latest Blog Posts 👇
 <!-- HASHNODE_BLOG:START -->
+- [My Rust journey and how to learn Rust](https://blog.moelove.info/my-rust-journey-and-how-to-learn-rust)
 <!-- HASHNODE_BLOG:END -->
 
 <div>
