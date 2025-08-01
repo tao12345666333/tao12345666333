@@ -21,6 +21,11 @@
             filter: url(#glow);
         }
 
+        @keyframes scale-in {
+            from { transform: scale(0); }
+            to { transform: scale(1); }
+        }
+
         @keyframes draw {
             to { stroke-dashoffset: 0; }
         }
@@ -36,6 +41,11 @@
             20%  { opacity: 0; transform: translateY(-15px); }
             100% { opacity: 0; }
         }
+        
+        #main-group {
+            transform-origin: center;
+            animation: scale-in 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
 
         .circle-path {
             fill: none;
@@ -46,10 +56,10 @@
             filter: url(#glow);
         }
 
-        #arc1 { stroke: #36d399; animation: draw 0.5s ease-out 0s forwards; }
-        #arc2 { stroke: #fbbd23; animation: draw 0.5s ease-out 0.5s forwards; }
-        #arc3 { stroke: #f87272; animation: draw 0.5s ease-out 1s forwards; }
-        #arc4 { stroke: #3abff8; animation: draw 0.5s ease-out 1.5s forwards; }
+        #arc1 { stroke: #8b5cf6; animation: draw 0.5s ease-out 0.8s forwards; }
+        #arc2 { stroke: #fbbd23; animation: draw 0.5s ease-out 1.3s forwards; }
+        #arc3 { stroke: #f87272; animation: draw 0.5s ease-out 1.8s forwards; }
+        #arc4 { stroke: #3abff8; animation: draw 0.5s ease-out 2.3s forwards; }
         
         .gauge-background {
             fill: none;
@@ -65,35 +75,34 @@
             stroke-dasharray: 817;
             stroke-dashoffset: 817;
             filter: url(#glow);
-            animation: power-up 1.2s ease-in-out 1.8s forwards;
+            animation: power-up 1.2s ease-in-out 2.6s forwards;
         }
 
-        #text1 { animation: carousel 6s infinite ease-in-out 3.2s; }
-        #text2 { animation: carousel 6s infinite ease-in-out 4.2s; }
-        #text3 { animation: carousel 6s infinite ease-in-out 5.2s; }
-        #text4 { animation: carousel 6s infinite ease-in-out 6.2s; }
-        #text5 { animation: carousel 6s infinite ease-in-out 7.2s; }
-        #text6 { animation: carousel 6s infinite ease-in-out 8.2s; }
+        #text1 { animation: carousel 6s infinite ease-in-out 4.0s; }
+        #text2 { animation: carousel 6s infinite ease-in-out 5.0s; }
+        #text3 { animation: carousel 6s infinite ease-in-out 6.0s; }
+        #text4 { animation: carousel 6s infinite ease-in-out 7.0s; }
+        #text5 { animation: carousel 6s infinite ease-in-out 8.0s; }
+        #text6 { animation: carousel 6s infinite ease-in-out 9.0s; }
     </style>
-
-    <circle cx="200" cy="200" r="150" fill="#2a2a2a" />
-
-    <g transform="rotate(-90 200 200)">
-        <circle class="gauge-background" cx="200" cy="200" r="130" />
-        <circle class="gauge-power" cx="200" cy="200" r="130" />
+    
+    <g id="main-group">
+        <circle cx="200" cy="200" r="150" fill="#2a2a2a" />
+        <g transform="rotate(-90 200 200)">
+            <circle class="gauge-background" cx="200" cy="200" r="130" />
+            <circle class="gauge-power" cx="200" cy="200" r="130" />
+        </g>
+        <g transform="rotate(-90 200 200)">
+            <path id="arc1" class="circle-path" d="M 200 50 A 150 150 0 0 1 350 200" />
+            <path id="arc2" class="circle-path" d="M 350 200 A 150 150 0 0 1 200 350" />
+            <path id="arc3" class="circle-path" d="M 200 350 A 150 150 0 0 1 50 200" />
+            <path id="arc4" class="circle-path" d="M 50 200 A 150 150 0 0 1 200 50" />
+        </g>
+        <text id="text1" class="tech-text" x="200" y="200">Cloud Native</text>
+        <text id="text3" class="tech-text" x="200" y="200">API</text>
+        <text id="text2" class="tech-text" x="200" y="200">AI</text>
+        <text id="text4" class="tech-text" x="200" y="200">Go</text>
+        <text id="text4" class="tech-text" x="200" y="200">Python</text>
+        <text id="text4" class="tech-text" x="200" y="200">Open Source</text>
     </g>
-
-    <g transform="rotate(-90 200 200)">
-        <path id="arc1" class="circle-path" d="M 200 50 A 150 150 0 0 1 350 200" />
-        <path id="arc2" class="circle-path" d="M 350 200 A 150 150 0 0 1 200 350" />
-        <path id="arc3" class="circle-path" d="M 200 350 A 150 150 0 0 1 50 200" />
-        <path id="arc4" class="circle-path" d="M 50 200 A 150 150 0 0 1 200 50" />
-    </g>
-
-    <text id="text1" class="tech-text" x="200" y="200">Cloud Native</text>
-    <text id="text2" class="tech-text" x="200" y="200">AI</text>
-    <text id="text3" class="tech-text" x="200" y="200">API</text>
-    <text id="text4" class="tech-text" x="200" y="200">Docker</text>
-    <text id="text5" class="tech-text" x="200" y="200">Go</text>
-    <text id="text6" class="tech-text" x="200" y="200">Python</text>
 </svg>
