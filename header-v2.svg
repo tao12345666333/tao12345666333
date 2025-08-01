@@ -99,10 +99,10 @@
             <path id="arc4" class="circle-path" d="M 50 200 A 150 150 0 0 1 200 50" />
         </g>
         <text id="text1" class="tech-text" x="200" y="200">Cloud Native</text>
-        <text id="text3" class="tech-text" x="200" y="200">API</text>
-        <text id="text2" class="tech-text" x="200" y="200">AI</text>
+        <text id="text2" class="tech-text" x="200" y="200">API</text>
+        <text id="text3" class="tech-text" x="200" y="200">AI</text>
         <text id="text4" class="tech-text" x="200" y="200">Go</text>
-        <text id="text4" class="tech-text" x="200" y="200">Python</text>
-        <text id="text4" class="tech-text" x="200" y="200">Open Source</text>
+        <text id="text5" class="tech-text" x="200" y="200">Python</text>
+        <text id="text6" class="tech-text" x="200" y="200">Open Source</text>
     </g>
 </svg>
